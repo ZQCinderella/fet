@@ -1,0 +1,118 @@
+#footerprepend {
+  background: #f5f5f5;
+  height: 220px;
+  clear: both;
+}
+#footerprepend ul:first-of-type {
+  padding-top: 35px;
+}
+#footerprepend ul:first-of-type li {
+  float: left;
+  font-size: 18px;
+  padding: 0 30px;
+  background: url(../images/index/foot-pretend-ul.gif) no-repeat right center;
+}
+#footerprepend ul:first-of-type li a {
+  color: #575757;
+}
+#footerprepend ul:first-of-type li a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+#footerprepend ul:first-of-type li:last-of-type {
+  background: none;
+}
+#footerprepend ul:last-of-type {
+  padding: 60px 0 50px;
+}
+#footerprepend ul:last-of-type li {
+  float: left;
+  width: 350px;
+  height: 58px;
+  margin-right: 55px;
+}
+#footerprepend ul:last-of-type li p:first-of-type {
+  width: 56px;
+  height: 56px;
+  float: left;
+  margin-right: 15px;
+  background: url(../images/index/foot-feature.png) no-repeat;
+}
+#footerprepend ul:last-of-type li h3 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: normal;
+}
+#footerprepend ul:last-of-type li p:last-of-type {
+  font-size: 13px;
+  color: #959595;
+  line-height: 18px;
+}
+#footerprepend ul:last-of-type li:nth-of-type(2) p:first-of-type {
+  background-position: 0 -56px;
+}
+#footerprepend ul:last-of-type li:last-of-type {
+  margin-right: 0;
+}
+#footerprepend ul:last-of-type li:last-of-type p:first-of-type {
+  background-position: 0 -112px;
+}
+#footer {
+  height: 265px;
+  background: #333;
+  clear: both;
+  padding: 48px 0;
+  color: #c0c0c0;
+  font-size: 14px;
+}
+#footer .intro {
+  width: 747px;
+  height: 48px;
+  float: left;
+}
+#footer .intro img {
+  float: left;
+  margin-right: 20px;
+}
+#footer .intro p {
+  line-height: 24px;
+}
+#footer dl {
+  float: right;
+  width: 314px;
+  height: 48px;
+}
+#footer dl dt {
+  float: left;
+  width: 72px;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ececec;
+}
+#footer dl dd {
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+#footer .line2 {
+  height: 112px;
+  padding-top: 40px;
+  clear: both;
+}
+#footer .line2 p {
+  line-height: 30px;
+}
+#footer .line2 a {
+  color: #c0c0c0;
+}
+#footer .line2 a:hover {
+  text-decoration: underline;
+}
+#footer .line2 .separator {
+  margin: 0 18px;
+}

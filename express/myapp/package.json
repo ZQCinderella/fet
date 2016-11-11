@@ -1,0 +1,18 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "我们得第一个express应用程序",
+  "main": "bookapi.js",
+  "scripts": {
+    "start": "node bookapi.js"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "zqcinderella",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {}
+}

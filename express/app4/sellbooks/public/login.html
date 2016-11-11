@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul,li{
+			list-style: none;
+		}
+	</style>
+	<script src="jquery-3.1.1.js"></script>
+</head>
+<body>
+	<form>
+		<ul>
+			<li>
+				<input type="text" name="username">
+			</li>
+			<li>
+				<input type="password" name="password">
+			</li>
+			<li>
+				<button>提交</button>
+				<input type="reset" value="重置">
+			</li>
+		</ul>
+	</form>
+	<div id="tip"></div>
+	<script>
+	 	$(document).ready(function(){
+	 		$('button').click(function(e){
+	 			e.preventDefault();
+	 			var username = $('input:eq(0)').val();
+	 			var password = $('input:eq(1)').val();
+	 			// $.ajax({
+	 			// 	url:'http://localhost:9000/login/' + username + '/' + password,
+	 			// 	type:'get',
+	 			// 	success:handleData
+	 			// });
+	 			var obj = {};
+	 			obj.username = username;
+	 			obj.password = password;
+	 			$.ajax({
+	 				url:'http://localhost:9000/login',
+	 				data:JSON.stringify(obj),
+	 				type:'post',
+	 				success:handleData
+	 			});
+	 		});
+	 		function handleData(data){
+				if(data.status == 'yes'){
+					$('#tip').html(data.msg);
+				}else{
+					$('#tip').html(data.msg).css('color','#f00');
+				}
+			}
+	 	});
+	</script>
+</body>
+</html>

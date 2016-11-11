@@ -9,3 +9,14 @@ node文件操作
 			同步和异步
 			writeFile();
 			writeFileSync();
+
+nodejs的http服务的创建
+	掌握url模块的使用
+		step.1 加载url模块
+		parse
+		format
+
+		step.2 加载http模块
+		1).了解请求clientRequest，响应serverResponse
+		2).了解服务器对象
+			step.1创建服务器对象

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+ <div class="product">
+    <img src="../images/citywalk/420x280.jpg" alt="" />
+    <div class="pro-info">
+        <span class="info-place">京都</span>
+        <div class="info-scan">
+        <span>46820</span>
+        次浏览
+        <span>238</span>
+        件已售
+        </div>
+        <h2><a href="#">【最世界一日游】将军之道—京都绝景之旅（含米其林午餐）仅限10周岁以上参加</a></h2>
+        <ul>
+	        <li>听惊心动魄的日本战国故事</li>
+	        <li>品米其林餐厅会席料理</li>
+	        <li>从东山最佳角度俯瞰京都</li>
+        </ul>
+        <div class="info-price">
+            <s>1650元</s>
+        	<strong>868</strong>元起
+        </div>
+        <div class="submit">
+            <a href="#">立即预订</a>
+        </div>
+    </div> 
+</div>
+	<script>
+		var fn = function(data){
+			console.log(data);
+		}
+		var url = 'http://localhost:8000/remote';
+		var script = document.createElement('script');
+		script.setAttribute('src',url);
+		document.body.appendChild(script);
+	</script>
+</body>
+</html>

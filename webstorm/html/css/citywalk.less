@@ -1,0 +1,239 @@
+//导航栏进行部分修改
+body{
+    background: #33312e;    
+}
+#nav{
+    border-bottom: 2px solid #45c79f;
+    ul{
+        li{
+            height: 48px;
+        }
+        li:hover{
+           
+            border-bottom: 1px solid #45c79f;
+        }
+        li.active{
+            border-bottom: 1px solid #45c79f;
+        }
+    }
+}
+//广告背景图片
+#banner-bg{
+    width: 100%;
+    height: 420px;
+    background: url(../images/citywalk/banner1-black-img1.jpg) no-repeat 60% 0;
+}
+
+//地点链接部分
+#place-link{
+    height: 102px;
+    font-size: 14px;
+     color: #636363;
+    .wrap{
+        height: 102px;
+        background: #fff;
+        div{
+            display: inline-block;
+        }
+        .container{
+            padding:18px 20px;
+            height: 79px;
+            line-height: 23px;
+            .city{
+                width: 90px;   
+                float: left;            
+            }
+            .infos{
+                height: 23px;
+                .link{
+                    ul{
+                        li{
+                            float: left;
+                            margin: 0 0 0 10px;
+                            a{
+                                padding: 0 6px;
+                                color: #636363;
+                                height: 23px;
+                                display: inline-block;
+                            }
+                            a:hover{
+                                color: #ccc;
+                                text-decoration: underline;
+                            }
+                            a.active{
+                                color: #fff;
+                                background: #12af7e;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//排序部分
+#sort{
+    .wrap{
+        height: 32px;
+        margin-top:25px;
+        margin-bottom: 25px;
+        ul{
+            li{
+                float: left;
+                margin-right: 30px;
+                color: #fff;
+                position: relative;
+                a{
+                    color: #fff;
+                }
+                label{
+                    cursor: pointer;
+                    margin-left: 18px;
+                }
+                a:hover,label:hover{
+                    color: #12af7e;
+                }
+                input[type="checkbox"]{
+                       width: 16px;
+                       height: 16px;
+                       position: absolute;
+                       left: 0;
+                       top: 2px;
+                }
+            }
+            li:first-of-type{
+                a{
+                    color: #12af7e;
+                }
+            }
+        }
+    }
+}
+//主体内容
+#content{
+    margin-bottom: 20px;
+    .product{
+        height: 270px;
+        background: #fff;
+        margin-bottom: 20px;
+        position: relative;
+        img{
+            float: left;
+            height: 270px;
+        }
+        .info-place{
+            display: inline-block;
+            width: 40px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid #ddd;
+            margin: 12px 0 12px 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #636363;
+        }
+        .info-scan{
+            float: right;
+            height: 30px;
+            line-height: 30px;
+             font-size: 14px;
+            color: #636363;
+            margin: 12px 20px 12px 0;
+            span{
+                margin:0 5px 0 5px;
+            }
+        }
+        h2{
+             width: 758px;
+            height:60px;
+             float: right;
+             padding: 0 10px 0 0;
+             //超过两行就用省略号代替
+             display: -webkit-box;
+             overflow: hidden;
+             -webkit-line-clamp: 2;
+             -webkit-box-orient: vertical;
+            a{
+                color: #000;
+            }
+        }
+        ul{
+            float: left;
+            padding: 10px 0 0 20px;
+            width: 460px;
+            li{
+                width:100%;
+                height: 24px;
+                line-height: 24px;
+                color: #666;
+                font-size: 13px;
+                overflow: hidden;
+                white-space: pre;
+                text-overflow: ellipsis;
+            }
+        }
+        .info-price{
+            float: right;
+            color: #999;
+            padding-top:40px;
+            padding-right: 20px;
+            s{
+                margin-right: 8px;
+            }
+            strong{
+                color: #ff7362;
+                font-size: 40px;
+            }
+        }
+        .submit{
+            width: 758px;
+            height:56px;
+            clear: both;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: right;
+            line-height: 56px;
+            a{
+                width:174px;
+                height: 56px;
+                display: inline-block;
+                background: #ff7362;
+                text-align: center;
+                color: #fff;
+                font-size:18px;
+            }
+        }
+    }
+    .pageTab{
+        width:100%;
+        height:24px;
+        .ul-page{
+            float: right;
+            a{
+                color: #ccc;
+                padding:0 7px;
+                cursor: pointer;
+            }
+
+            a:hover{
+                color: #666;
+            }
+            a.active{
+                padding:5px 12px;
+                background: #fff;
+                color: #000;
+                display: inline-block;
+            }
+            .prePage{
+                display: none;
+            }
+        }
+        .pageNum{
+            display: inline-block;
+        }
+    }
+}
+
